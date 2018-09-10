@@ -1,0 +1,18 @@
+<div class= "nav-wrapper">
+{{>nav-menu}}
+</div>
+<div class="view">
+    <div class="overlay">
+        <h1> Thank you for your signature </h1>
+        <img src = {{signature}}>
+
+        <a href = "/signers"> See all {{numSigners}} signers </a>
+
+        <a href = "/editprofile"> Edit Profile </a>
+
+        <form method ='post' >
+            <input id = "_csrf" type="hidden" name="_csrf" value="{{csrfToken}}">
+            <button class = 'delete_signature' type="submit"> Delete your Signature </button>
+        </form>
+    </div>
+</div>

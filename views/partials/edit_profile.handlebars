@@ -1,0 +1,22 @@
+<h1> EDIT PROFILE </h1>
+<div class = "form">
+    {{#if userInfo}}
+  <form method ='post' class = 'form' autocomplete="off">
+    <input id = "_csrf" type="hidden" name="_csrf" value="{{csrfToken}}">
+{{#with userInfo}}
+    <input id="firstname" type ='text' name = 'firstname' placeholder = "Enter first name" value = {{first_name}} >
+    <input id="lastname" type ='text' name = 'lastname' placeholder = "Enter last name" value = {{last_name}} >
+
+      <input id="email" type ='text' name = 'email' placeholder = "Enter email" value = {{email}}>
+
+        <input id="password" type ='password' name = 'password' placeholder = "Enter password" value = "" >
+    <input id="age" type ='number' min= "16" max= "99" name = 'age' placeholder = "Enter your age" value = {{age}} >
+    <input id="city" type ='text' name = 'city' placeholder = "Enter your city" value = {{city}} >
+      <input id="url" type ='text' name = 'url' placeholder = "Enter your website" value = {{url}} >
+      <button type="submit"> SUBMIT </button>
+    </form>
+    {{/with}}
+    {{else}}
+    <a href='/profile'> Please fill in your profile </a>
+  </div>
+{{/if }}

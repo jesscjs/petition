@@ -1,0 +1,18 @@
+<h1 id = 'supporters'>SUPPORTERS</h1>
+<div class = "list">
+{{#signedList}}
+<ul>
+  <li>
+      <a href={{url}}>{{first_name}} {{last_name}}</a>
+      {{#if age}}
+          <span>, {{age}}</span>
+          {{#if city}}
+              <a href=/signers/{{city}}>, {{city}}</a>
+          {{/if}}
+      {{/if}}
+
+  </li>
+</ul>
+
+{{/signedList}}
+</div>

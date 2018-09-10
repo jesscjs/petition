@@ -1,0 +1,16 @@
+<div class="nav-menu">
+
+  <a href='/register'> REGISTER </a>
+
+  {{#if logged}}
+    <a href='/thanks'> PETITION </a>
+    <a href='/signers'> SIGNATURES </a>
+    <a href = '/editprofile'> EDIT PROFILE</a>
+    <a href = '/logout'> LOGOUT </a>
+  {{else}}
+    <a href='/petition'> PETITION </a>
+    <a href='/signers'> SIGNATURES </a>
+    <a id= "login" href='/login'> LOGIN </a>
+  {{/if}}
+
+</div>

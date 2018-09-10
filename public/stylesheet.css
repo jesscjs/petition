@@ -1,0 +1,260 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+	margin: 0;
+}
+
+body {
+	background-color: #1f1323;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100vw;
+}
+
+#signature {
+	border: none;
+	outline: bottom;
+	outline-style: solid;
+	outline-width: thin;
+	outline-color: #96e2d1;
+}
+.home {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	flex-direction: column;
+	pointer: cursor;
+	font-size: 1em;
+	height: 100vh;
+	width: 85vw;
+	background-image: url('toa-heftiba-644507-unsplash.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.overlay {
+	height: 70%;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	flex-direction: column;
+	pointer: cursor;
+	font-size: 1em;
+	background-color: rgba(53,42,56, 0.7);
+}
+
+.overlay * {
+	color: rgba(187, 184, 188, 1);
+}
+
+.view .overlay h1{
+	font-size: 2.5em;
+	color: rgba(187, 184, 188, 1);
+}
+
+
+.home h1 {
+	display: flex;
+	font-size: 2.5em;
+	align-self: center;
+	margin: 4vh;
+}
+.home h3 {
+	display: flex;
+	align-self: center;
+	font-size: 1.4em;
+}
+.home p,
+.home a {
+	display: flex;
+	/*color: #352a38;*/
+	font-size: 1.4em;
+	align-self: center;
+	margin: 1.4vh;
+	font-weight: bolder;
+	text-decoration: none;
+}
+h3.subtitle {
+	margin: 2.5vh;
+}
+
+.nav-wrapper {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	background-color: #352a38;
+}
+
+.nav-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	color: #bbb8bc;
+	background-color: #352a38;
+	width: 15vw;
+	height: 50vh;
+}
+
+.nav-menu a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	color: #bbb8bc;
+	font-size: 1em;
+	background-color: #352a38;
+	width: 15vw;
+	height: 50vh;
+	text-decoration: none;
+}
+
+.view {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	flex-direction: column;
+	pointer: cursor;
+	font-size: 1em;
+	height: 100vh;
+	width: 85vw;
+	background-image: url('toa-heftiba-644507-unsplash.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-top: 3%;
+}
+
+.form input {
+	display: flex;
+	margin: 0.5vh;
+	padding-left: 10px;
+	width: 50%;
+	height: 4vh;
+	font-size: 1.1em;
+	background-color: rgba(53,42,56, 0.7);
+	outline: 0;
+	color: #96e2d1;
+	border: none;
+}
+.form a
+{
+	text-decoration: none;
+	color: #96e2d1;
+	font-size: 1.1em;
+}
+
+
+.view .overlay a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.1em;
+	color: #96e2d1;
+    margin-top: 0.1%;
+}
+
+.view li {
+	display: inline-flex;
+	text-decoration: none;
+	color: #96e2d1;
+	font-size: 1.1em;
+	list-style: none;
+	margin-left: -3vw;
+	margin-top: 1vh;
+}
+
+.view span{
+	font-size: 1.1em;
+	color: #96e2d1;
+	margin: 0vh;
+}
+input::-webkit-input-placeholder {
+	color: #bbb8bc;
+	/*font-style: italic;*/
+}
+
+.form button {
+	/*If you wanna style your buttons first you have to reset default button behaviour with:*/
+	-webkit-appearance: none;
+	font-size: 1.1em;
+	color: #bbb8bc;
+	background-color: #352a38;
+	letter-spacing: 0.005em;
+	align-items: center;
+	align-self: center;
+	justify-self: center;
+	border: none;
+	border-radius: 20px;
+	vertical-align: center;
+	width: 50%;
+	margin: 2.5%;
+	/*margin-bottom: 5vh;*/
+	padding: 1vh;
+	outline: 0;
+	font-weight: 600;
+
+}
+
+.view h1 {
+	display: flex;
+	/*color: #96e2d1;*/
+	font-size: 2em;
+	align-self: center;
+	margin: 0.7vh;
+}
+
+#supporters {
+	display: flex;
+	font-size: 2.5em;
+	color: rgba(187, 184, 188, 1);
+	align-self: center;
+	margin: 4vh;
+}
+.view p {
+	display: flex;
+	color: #96e2d1;
+	align-self: center;
+	margin: 3vh;
+}
+
+.description .partials {
+	background-color: white;
+}
+
+.description .partials .current-page {
+	background-color: grey;
+	color: black;
+}
+.list p {
+	color: #bbb8bc;
+}
+
+.delete_signature {
+	border: none;
+	background-color: rgba(53,42,56, 0);
+	text-decoration: none;
+	color: #96e2d1;
+	font-size: 1.1em;
+	cursor: pointer;
+	outline: 0;
+    padding: 0;
+    margin: 0;
+}
